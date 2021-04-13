@@ -49,5 +49,4 @@ window.addEventListener('load', () =>{
     const wrapper = document.querySelector('.social-icons');
     const preload = document.querySelector('.preload');
     preload.classList.add('preload-finish');
-    wrapper.classList.toggle('.toggle-social-icons');
 })
