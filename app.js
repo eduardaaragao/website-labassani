@@ -46,8 +46,8 @@ window.onload = () => {
 }
 
 window.addEventListener('load', () =>{
-    const nav = document.getElementById("wrapper-social");
+    const wrapper = document.querySelector('.social-icons');
     const preload = document.querySelector('.preload');
     preload.classList.add('preload-finish');
-    nav.classList.toggle(".toggle-wrapper");
+    wrapper.classList.toggle('.toggle-social-icons');
 })
