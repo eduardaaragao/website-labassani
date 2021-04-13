@@ -1,67 +1,5 @@
 /*--------------------------------------------------------------------------------------------- */
 
-/*const slideContainer = document.querySelector(".slider");
-const sliderText = document.querySelector(".slider-text");
-const btnLeft = document.querySelector(".slider-btn-left");
-const btnRight = document.querySelector(".slider-btn-right");
-
-const sliderImages = [
-    {
-        src: "assets/images/bg_1.jpg",
-        text: "Os melhores bolos da cidade de Viseu",
-    },
-    {
-        src: "assets/images/bg_2.jpg",
-        text: "Para as melhores comemorações",
-    },
-    {
-        src: "assets/images/bg_3.jpg",
-        text: "Bolos e doces feitos à mão",
-    },
-    {
-        src: "assets/images/bg_4.jpg",
-        text: "Uma história de 25 anos no Brasil... agora em Viseu!",
-    },
-    
-    {
-        src: "assets/images/bg_5.PNG",
-        text: "Entregamos para mais de 10 municípios",
-    },
-    {
-        src: "assets/images/bg_6.jpg",
-        text: "Quer receber um orçamento gratuito? Contacte-nos!",
-    },
-]
-
-var currentIndex = 0;
-var total = sliderImages.length;
-
-function mostrarSlide()
-{
-    
-        slideContainer.style.backgroundImage = `linear-gradient(
-            to right,
-            rgba(20, 20, 20, 0.5),
-            rgba(64, 64, 64, 0.5)
-        ),
-        url(${sliderImages[currentIndex].src})`
-        sliderText.innerHTML = sliderImages[currentIndex].text;
-        currentIndex++;
-
-        slideContainer.classList.add("fadeIn")
-        setTimeout(() => {
-            slideContainer.classList.remove("fadeIn")
-          }, 1000)
-        
-        if(currentIndex > total -1){
-            currentIndex = 0;
-        }
-        setTimeout(mostrarSlide, 6000);      
-
-}*/
-/*const app = ()=>{
-    navbarMobile();
-}*/
 const counters = document.querySelectorAll('.counter');
 const speed = 300;
 
@@ -108,6 +46,8 @@ window.onload = () => {
 }
 
 window.addEventListener('load', () =>{
+    const nav = document.getElementById("wrapper-social");
     const preload = document.querySelector('.preload');
     preload.classList.add('preload-finish');
+    nav.classList.toggle(".toggle-wrapper");
 })
